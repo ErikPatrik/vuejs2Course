@@ -1,0 +1,29 @@
+Visão geral do curso
+
+Iniciando com VueJS
+Interagindo com a DOM (templates)
+Entendo a instância do VueJS
+Vue CLI
+Formulários
+
+Diretivas, Filtros e Mixins
+Animaçãoes e transições
+Trabalhando com HTTP (Axios)
+Roteamento (Vue router)
+Gerenciamento de estado (Vuex)
+Deploy de aplicação
+
+
+Projeto #01
+Básico, interação com template
+
+Projeto #02
+Compontens
+
+Projeto #03
+Animações
+
+Projeto #04
+Rotas, Gerenciamento de estado
+
+Projeto #05
