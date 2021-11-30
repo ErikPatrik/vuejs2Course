@@ -1,0 +1,28 @@
+<!-- v-once: atualiza apenas uma vez o valor, ou seja, atualiza somente o que precisa ser atualizado  -->
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <p v-once>{{ titulo }}</p> <!-- Atualiza apenas uma vez o valor-->
+    <p>{{ saudacao() }}</p>
+    <a v-bind:href="link">Google</a>
+    <hr>
+    <p v-html="linkHtml"></p> <!-- Coloca dentro da tag "p" o link -->
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Using VueJS!',
+            link: 'http://google.com',
+            linkHtml: '<a href="http://google.com">Google</a>'
+        },
+        methods: {
+            saudacao() {
+                this.titulo = 'Bom dia'
+                return this.titulo
+            }
+        }
+    })
+</script>

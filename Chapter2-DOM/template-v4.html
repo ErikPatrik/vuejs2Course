@@ -1,0 +1,26 @@
+<!-- Binding de atributos -->
+
+<!-- v-bind consegue acessar o atributo, passando o nome do mesmo -->
+<!-- diretivas são propriedades interpretadas pelo vue -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{ titulo }}</p>
+    <p>{{ saudacao() }}</p>
+    <a v-bind:href="link">Google</a>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Using VueJS!',
+            link: 'http://google.com'
+        },
+        methods: {
+            saudade() {
+                return 'Boa semana'
+            }
+        }
+    })
+</script>
