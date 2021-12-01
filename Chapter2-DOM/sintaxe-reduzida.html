@@ -1,8 +1,15 @@
+<!--
+@click
+:value = propriedade que o vue faz um bind
+-->
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 <div id="app">
     <p>{{ contador }}</p>
-    <button v-on:click="somar">Somar 1</button>
+    <button @click="somar">Somar 1</button>
+    <hr>
+    <input type="text" :value="contador">
 </div>
 
 <script>
