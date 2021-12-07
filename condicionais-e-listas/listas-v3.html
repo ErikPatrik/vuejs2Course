@@ -5,6 +5,23 @@
 	<ul>
 		<li v-for="(cor, i) in cores" :teste="cor">{{ cor }} - {{ i }}</li>
 	</ul>
+	<hr />
+	<template v-for="(cor, i) in cores">
+		<h1>{{ cor }}</h1>
+		<p>{{ i }}</p>
+	</template>
+	<hr />
+	<ul>
+		<li v-for="pessoa in pessoas">
+			{{ pessoa.nome }}
+			<!--percorrendo atributos do objeto abaixo-->
+			<div v-for="valor in pessoa">{{valor}}</div>
+			<!--copm chave-->
+			<div v-for="(valor, chave, index) in pessoa">
+				{{chave}} = {{valor}} ({{index}})
+			</div>
+		</li>
+	</ul>
 </div>
 
 <script>
@@ -23,5 +40,10 @@
 <style>
 	ul {
 		list-style: none;
+	}
+
+	h1,
+	p {
+		display: inline;
 	}
 </style>
